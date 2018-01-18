@@ -1,0 +1,42 @@
+/* pages/word/热门推荐/hot.wxss */
+
+
+/* 父级视图  */
+.HomeHotRoundView{
+
+  width: 240rpx;
+  height: 320rpx;
+  display: inline-block;
+  margin-left: 66rpx;
+  margin-top:40rpx; 
+  margin-right: 66rpx;
+}
+
+/* 父级视图上面的的图片  */
+.HomeHotRoundViewImage{
+  width: 240rpx;
+  height: 240rpx;
+  display: block;
+  margin-left: 0rpx;
+  margin-top:0rpx; 
+  border-radius: 120rpx;
+ 
+}
+
+/* 父级视图上面的label  */
+.HomeHotRoundViewLabel{
+
+  width: 240rpx;
+  display: inline-block;
+  height: 40rpx;
+  margin-top:20rpx; 
+  font-size: 30rpx;
+  color: black;
+  text-align: center;
+  /*//超出一行文字自动隐藏  */
+  overflow:hidden; 
+ /*//文字隐藏后添加省略号  */
+    text-overflow:ellipsis;
+    /*//强制不换行  */
+    white-space:nowrap;  
+}

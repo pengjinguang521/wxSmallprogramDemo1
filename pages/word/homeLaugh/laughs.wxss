@@ -1,0 +1,18 @@
+/* pages/word/首页幽默笑话/laughs.wxss */
+.itemContent{
+  margin: 20rpx;
+  display:block;
+  float: none;
+  font-size: 30rpx;
+  color: lightgray;
+}
+page{
+background-color: #FFFFE0;
+}
+.itemTitle{
+display:block;
+margin: 10rpx;
+text-align: center;
+float: none;
+
+}

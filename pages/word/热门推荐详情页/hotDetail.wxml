@@ -1,0 +1,4 @@
+<block wx:for-items="{{dataArray}}">
+<!-- 顶部图片  -->
+<image class='itemImage' src="{{item.des_picture}}"></image>
+</block>

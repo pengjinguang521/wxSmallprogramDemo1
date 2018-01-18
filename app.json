@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/word/word",
+    "pages/image/image",
+    "pages/voice/voice",
+    "pages/video/video",
+    "pages/detail/detail",
+    "pages/word/首页详情页/homedetail",
+    "pages/word/homeLaugh/laughs",
+    "pages/word/热门推荐/hot",
+    "pages/word/热门推荐详情页/hotDetail",
+    "pages/word/美食推荐/food",
+    "pages/word/美食推荐详情页/foodDetail",
+    "pages/image/imageDetail/imageDetail"
+  ],
+
+
+  "tabBar": {
+    "color": "lightgray",
+    "selectedColor": "#EEB422",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFE0",
+    "list": [
+      {
+        "pagePath": "pages/word/word",
+        "text": "首页",
+        "iconPath": "image/wordN.png",
+        "selectedIconPath": "image/wordS.png"
+      },
+   
+      {
+        "pagePath": "pages/image/image",
+        "text": "资讯",
+        "iconPath": "image/imageN.png",
+        "selectedIconPath": "image/imageS.png"
+      },
+      {
+        "pagePath": "pages/voice/voice",
+        "text": "游友圈",
+        "iconPath": "image/voiceN.png",
+        "selectedIconPath": "image/voiceS.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "个人中心",
+        "iconPath": "image/videoN.png",
+        "selectedIconPath": "image/videoS.png"
+      }
+      
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFFFE0",
+    "navigationBarTextStyle":"black"
+  }
+}

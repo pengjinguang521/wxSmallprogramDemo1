@@ -1,0 +1,5 @@
+
+<block wx:for="{{dataArray}}">
+<image class='imageView' src='{{item.img}}' mode='aspectFill'> </image>
+<label class='labelView'>{{item.step}} </label> 
+</block>

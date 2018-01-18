@@ -1,0 +1,70 @@
+<loading hidden="{{loadingHidden}}">正在加载...</loading>
+
+  <!--
+   indicator-dots='true' 是否显示指示点  默认 false
+   indicator-color:指示点颜色
+   indicator-active-color:选中的指示点颜色
+   autoplay：是否自动切换  默认：false
+   interval:自动切换时间间隔
+   duration：滑动动画时长
+   vertical  是否改成纵向， 默认  false
+ -->
+
+<!-- 顶部轮播图的展示   -->
+<swiper indicator-dots='true' indicator-color='gray' indicator-active-color='green' autoplay='true' interval='5000' duration='500'>
+    <block wx:for="{{imgUrl}}">
+      <swiper-item class="item_image">
+          <image src='{{item}}' class='swiper_image' mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+
+</swiper>
+
+<!-- 圆形按钮的展示  -->
+
+<view class='topMainView'>
+
+<!-- 热门推荐  -->
+<view class='topHomeRoundView' bindtap='hotRecommendedAction'>
+<image class='topHomeRoundViewImage' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514459268089&di=80f6c97355d41e31867355736cf9833f&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fb21c8701a18b87d6f227a8020d0828381f30fd42.jpg'>
+</image> 
+  <label class='topHomeTitleView'>热门推荐</label> 
+</view>
+
+
+<!-- 美食推荐  -->
+
+<view class='topHomeRoundView' bindtap='foodTapAction'>
+<image class='topHomeRoundViewImage' src='http://pic1.cxtuku.com/00/08/41/b3782c91ac6d.jpg'>
+</image> 
+<label class='topHomeTitleView'>美食推荐</label> 
+</view> 
+<!-- 幽默笑话  -->
+<view class='topHomeRoundView' bindtap='laughTapAction'>
+<image class='topHomeRoundViewImage' src='http://www.100eshu.com/uploads/thumb_Big/5398ca5f865a4b569f4b730e54b22216.jpg'>
+</image> 
+<label class='topHomeTitleView' >幽默笑话</label> 
+</view> 
+</view>
+
+
+
+ <view class="divLine"></view>
+
+<scroll-view class='scroll-view' scroll-y="true" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower">
+<!--  这边网络请求结束 回调请求到的数据  -->
+<block wx:for-items="{{list}}">
+<view class='listItemView' data-data='{{item}}'  bindtap='ItemTapAction'>
+<!-- 左边图标  -->
+<image class='listItemViewIcon' src="{{item.s_imgurl}}"></image>
+<!-- 标题  -->
+<label class='listItemTitle'>{{item.s_name}}</label>
+<!-- 级别  -->
+<label class='listItemGrade'>{{item.s_grade}}</label> 
+<!-- 价格  -->
+<label class='listItemPrice'>¥: {{item.s_price_min}}</label>
+<!-- 地址  -->
+<label class='listItemAddress'>{{item.s_address}}</label>
+</view>
+ </block>
+</scroll-view>

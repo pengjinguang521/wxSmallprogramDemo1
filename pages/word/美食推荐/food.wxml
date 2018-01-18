@@ -1,0 +1,8 @@
+<block wx:for="{{list}}">
+ <view class='HomeHotRoundView' data-data='{{item}}' bindtap='ItemTapAction'>
+
+<image class='imageView' src='{{item.albums[0]}}'> </image>
+<label class='labelView'>{{item.title}} </label>
+
+ </view>
+</block>

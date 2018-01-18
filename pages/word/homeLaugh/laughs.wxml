@@ -1,0 +1,23 @@
+<loading hidden="{{loadingHidden}}">正在加载...</loading>
+
+  <!--
+   indicator-dots='true' 是否显示指示点  默认 false
+   indicator-color:指示点颜色
+   indicator-active-color:选中的指示点颜色
+   autoplay：是否自动切换  默认：false
+   interval:自动切换时间间隔
+   duration：滑动动画时长
+   vertical  是否改成纵向， 默认  false
+ -->
+
+
+
+<scroll-view class='scroll-view' scroll-y="true" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower">
+<!--  这边网络请求结束 回调请求到的数据  -->
+<block wx:for-items="{{dataArray}}">
+<!-- 顶部图片  -->
+<p class='itemTitle'>{{item.title}}</p> 
+<!-- 底部文字  -->
+<p class='itemContent'>{{item.content}}</p>
+ </block>
+</scroll-view>
